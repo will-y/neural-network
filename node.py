@@ -21,6 +21,7 @@ class Node:
         self.inputs.append(input)
         
         if self.num_inputs == len(self.inputs):
+            self.output = 0
             for i in range(self.num_inputs):
                 self.output += self.inputs[i] * self.weights[i]
 

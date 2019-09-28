@@ -47,8 +47,8 @@ class Network:
             for node in list_of_nodes:
                 node_weights = []
                 for i in range(node.num_inputs):
-                    #node_weights.append(random.gauss(0, 1))
-                    node_weights.append(random.random())
+                    node_weights.append(random.gauss(0, 1))
+                    #node_weights.append(random.random())
                 node.set_weights(node_weights)
 
     def compile(self):

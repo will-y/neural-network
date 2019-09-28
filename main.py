@@ -17,4 +17,4 @@ if __name__ == "__main__":
     print(network.get_weights())
     network.print_network()
     #network.display_network()
-    print(network.predict([.1, .2, .3, .4, .5, .6, .7, .8, .9, .1]))
+    print(network.predict([10, 8, -1, 1, -1, -1, 5, -1, -1, -1]))
