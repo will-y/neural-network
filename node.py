@@ -30,6 +30,8 @@ class Node:
             for node in self.connections:
                 node.send_input(self.output)
 
+            self.inputs = []
+
     def set_weights(self, weights):
         if len(weights) != self.num_inputs:
             raise Exception("Inputed weights don't match the number of inputs")
