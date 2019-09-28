@@ -1,0 +1,20 @@
+from network import Network
+
+if __name__ == "__main__":
+    network = Network(10)
+    network.add_layer(4)
+    network.add_layer(3)
+    network.add_layer(2)
+    network.add_layer(5)
+    network.add_layer(5)
+    network.add_layer(6)
+    network.add_layer(8)
+    network.add_layer(3)
+    network.add_layer(7)
+    network.compile()
+    print(network.get_weights())
+    network.set_weights(network.get_weights())
+    print(network.get_weights())
+    network.print_network()
+    #network.display_network()
+    print(network.predict([.1, .2, .3, .4, .5, .6, .7, .8, .9, .1]))
